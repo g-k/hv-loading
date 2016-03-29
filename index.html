@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+     #wrapper {
+	 width: 100px;
+	 height: 100px;
+	 background: none;
+     }
+     div {
+	 position: absolute;
+	 width: 35px;
+	 height: 35px;
+	 background: #67BD5A;
+	 opacity: 1;
+	 mix-blend-mode: multiply;
+	 border-radius: 12px;
+	 animation-duration: 3s;
+	 animation-iteration-count: infinite;
+     }
+     .left {
+	 float: left;
+	 margin-left: 38%;
+	 margin-top: 52%;
+	 animation-name: load-left;
+     }
+     @keyframes load-left {
+	 from {
+	     margin-left: 0%;
+	     margin-top: 52%;
+	 }
+	 to {
+	     margin-left: 38%;
+	     margin-top: 52%;
+	 }
+     }
+
+     .right {
+	 float: right;
+	 margin-left: 62%;
+	 margin-top: 48%;
+	 animation-name: load-right;
+     }
+     @keyframes load-right {
+	 from {
+	     margin-left: 100%;
+	     margin-top: 48%;
+	 }
+	 to {
+	     margin-left: 62%;
+	     margin-top: 48%;
+	 }
+     }
+
+     .top {
+	 margin-left: 52%;
+	 margin-top: 38%;
+	 animation-name: load-top;
+     }
+     @keyframes load-top {
+	 from {
+	     margin-left: 52%;
+	     margin-top: 0%;
+	 }
+	 to {
+	     margin-left: 52%;
+	     margin-top: 38%;
+	 }
+     }
+
+     .bottom {
+	 margin-left: 48%;
+	 margin-top: 62%;
+	 animation-name: load-bottom;
+     }
+     @keyframes load-bottom {
+	 from {
+	     margin-left: 48%;
+	     margin-top: 100%;
+	 }
+	 to {
+	     margin-left: 48%;
+	     margin-top: 62%;
+	 }
+     }
+    </style>
+    <body>
+	<div id="wrapper">
+	    <div class="top"></div>
+	    <div class="left"></div>
+	    <div class="right"></div>
+	    <div class="bottom"></div>
+	</div>
+    </body>
+</html>
